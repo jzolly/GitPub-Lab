@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
     res.send('Welcome to the Gitpub App!')
 });
 app.get('/drinks', (req, res) => {
-    res.send(drinks)
+    res.render('drinks_index.ejs')
 });
 // this tells node to listen for requests is running on: localhost:3000
 app.listen(3000, () => {
