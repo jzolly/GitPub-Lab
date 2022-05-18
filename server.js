@@ -25,17 +25,16 @@ app.get('/', (req, res) => {
     res.send('Welcome to the Gitpub App!')
 });
 app.get('/drinks', (req, res) => {
-    res.render('drinks_index.ejs', { 'allDrinks': drinks })
+    res.render('drinks_index.ejs', { 'drinks': drinks })
 });
+
 app.get('/drinks/:id', (req, res) => {
-    res.send(req.params.id)
-});
-app.get('/drinks/:indexOfDrinksArray', (req, res) => {
     res.render('drinks_show.ejs', {
-        drink: drinks[req.params.indexOfDrinksArray]
+        drink: drinks[req.params.id]
     });
 });
+
 // this tells node to listen for requests is running on: localhost:3000
 app.listen(3000, () => {
-    console.log('')
+    console.log('Drink Up')
 });

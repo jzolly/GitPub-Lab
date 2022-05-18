@@ -14,13 +14,13 @@
   </head>
   <body>
     <h1>Welcome to gitPub</h1>
-    <% console.log(allDrinks) %>
+    <% console.log(drinks) %>
     <h2>Drinks Menu</h2>
-    <% for(let i=0; i<allDrinks.length; i++) { %>
+    <% for(let i=0; i<drinks.length; i++) { %>
         <ul>
             <il>
-                <a href="/allDrinks/<%= i %>">
-                    <%= allDrinks[i].name %>
+                <a href="/drinks/<%= i %>">
+                    <%= drinks[i].name %>
                 </a>
             </il>
         </ul>
