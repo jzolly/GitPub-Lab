@@ -4,12 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Drink</title>
+    <title>Food</title>
     <style type="text/css">
-        html {
-            width: 100%;
-            height: 100%;
-        }
         body {
           color: blanchedalmond;
           background-color: rgb(74, 99, 118);
@@ -33,15 +29,15 @@
             border-radius: 6px;
             border: solid black 2px;
         }
-      </style>
+    </style>
 </head>
 <body>
     <!-- <h1>At foo bar</h1> -->
-    <h2><%= drink.name %></h2>
-    <h3>Price $ <%= drink.price %></h3>
-    <img src="<%= drink.image %>.jpg" alt="<%= drink.name %>" height='400px'/>
+    <h2><%= food.name %></h2>
+    <h3>Price $ <%= food.price %></h3>
+    <img src="<%= food.image %>" alt="<%= food.name %>" height='400px'/>
     <br>
-    <a href="/drinks">Back to Drinks Menu</a>
+    <a href="/food">Back to Food Menu</a>
     <br>
     <a href="/">Go to Main Menu</a>
 </body>
