@@ -14,5 +14,17 @@
   </head>
   <body>
     <h1>Welcome to gitPub</h1>
+    <% console.log(allDrinks) %>
+    <h2>Drinks Menu</h2>
+    <% for(let i=0; i<allDrinks.length; i++) { %>
+        <ul>
+            <il>
+                <a href="/allDrinks/<%= i%>">
+                    <%= allDrinks[i].name %>
+                </a>
+            </il>
+        </ul>
+    <% } %>
+
   </body>
 </html>
